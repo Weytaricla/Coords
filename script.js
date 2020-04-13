@@ -5,7 +5,7 @@ function coords() {
 
     function getXPositionOfElement() {//Получить случайные координаты x окна браузера.
 
-        var x_position = Math.floor(Math.random() * window.innerWidth);
+        var x_position = Math.floor(Math.random() * 900);
 
         return x_position + "px";
 
@@ -15,7 +15,7 @@ function coords() {
 
     function getYPositionOfElement() {//Получить случайные координаты y окна браузера.
 
-        var y_position = Math.floor(Math.random() * window.innerHeight);
+        var y_position = Math.floor(Math.random() * 500);
 
         return y_position + "px";
 
@@ -30,8 +30,8 @@ function coords() {
     let x = "x = " + XCoord
     let y = "y = " + YCoord
 
-    div.style.left = XCoord + "px"
-    div.style.top = YCoord + "px"
+    div.style.left = XCoord
+    div.style.top = "'" + YCoord + "'"
 
     div.style.width = "100px";
     div.style.height = "50px";
