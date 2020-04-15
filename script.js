@@ -26,20 +26,21 @@ function coords() {
     let XCoord =  getXPositionOfElement()
     let YCoord =  getYPositionOfElement()
 
-    var div = document.createElement('div');
+    var element = document.createElement('div');
     let x = "x = " + XCoord
     let y = "y = " + YCoord
 
-    div.style.left = XCoord
-    div.style.top = "'" + YCoord + "'"
+    element.style.width = "100px";
+    element.style.height = "50px";
+    element.style.padding = "5px";
+    element.style.position = "relative";
+    element.style.backgroundColor = "rgb(230, 138, 101)";
 
-    div.style.width = "100px";
-    div.style.height = "50px";
-    div.style.padding = "5px";
-    div.style.backgroundColor = "rgb(230, 138, 101)";
+    element.style.left = '100px'
+    element.style.top = '100px'
 
-    div.innerHTML = x +  "<br>"  +  y;
+    element.innerHTML = x +  "<br>"  +  y;
 
-    document.getElementById('pole').append(div);
+    document.getElementById('pole').append(element);
 
 }
